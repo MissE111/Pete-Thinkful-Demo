@@ -1,6 +1,24 @@
 /* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet. You don't have to edit this line.*/
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
 
+/* About content container styles */
+.about-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* About text styles */
+.about-text {
+  width: 70%; /* Adjust as needed */
+}
+
+/* About image styles */
+.about-image {
+  width: 20%; /* Adjust as needed */
+  max-width: 50px; /* Limiting the maximum width */
+  margin-left:20px;
+}
+
 /* Resetting default margins and paddings */
 * {
   margin: 0;
@@ -103,22 +121,4 @@ a:hover {
 /* Footer and header styles */
 header, footer {
   text-align: center;
-}
-
-/* About content container styles */
-.about-content {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* About text styles */
-.about-text {
-  width: 70%; /* Adjust as needed */
-}
-
-/* About image styles */
-.about-image {
-  width: 20%; /* Adjust as needed */
-  max-width: 100px; /* Limiting the maximum width */
-  margin-right:20px;
 }
