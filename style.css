@@ -1,53 +1,16 @@
 /* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet. You don't have to edit this line.*/
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
 
-/* About content container styles */
-.about-content {
+/* Header styles */
+header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-/* About text styles */
-.about-text {
-  width: 70%; /* Adjust as needed */
-}
-
-/* About image styles */
-.about-image {
-  width: 20%; /* Adjust as needed */
-  max-width: 50px; /* Limiting the maximum width */
-  margin-left:20px;
-}
-
-/* Resetting default margins and paddings */
-* {
+/* Logo text styles */
+h1 {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body styles */
-body {
-  color: #003049;
-  font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
-  padding: 40px;
-  background-color: #eae2b7;
-}
-
-/* Heading styles */
-h1, h2, h3 {
-  font-family: "Playfair Display", Times, serif;
-  text-align: center;
-}
-
-/* Article styles */
-article {
-  padding: 50px 0;
-}
-
-/* Text styles */
-p {
-  line-height: 1.5;
 }
 
 /* Navigation styles */
@@ -55,10 +18,10 @@ nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
 }
 
 nav ul li {
-  display: inline;
   margin-right: 20px;
 }
 
@@ -66,59 +29,44 @@ nav ul li:last-child {
   margin-right: 0;
 }
 
-nav ul li a {
-  text-decoration: none;
-}
-
-/* Image styles */
-img {
-  width: 100%;
-  height: auto;
-}
-
-.image-circle {
-  border-radius: 50%;
-  border: 2px solid #003049;
-}
-
-/* Divider styles */
-hr {
-  border: 1px solid black;
-}
-
-/* Main container styles */
-div {
-  margin: auto;
-  width: 600px;
-}
-
-/* Portfolio item styles */
-.portfolio-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.portfolio-item {
-  width: calc(33.33% - 20px);
-  max-width: 200px;
-}
-
-.portfolio-item img {
-  width: 100%;
-  max-width: none;
-}
-
-/* Link styles */
-a {
-  color: #d62828;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #f77f00;
-}
-
-/* Footer and header styles */
-header, footer {
+/* About section styles */
+#about {
   text-align: center;
 }
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  width: 50%;
+  text-align: left;
+}
+
+.about-image {
+  width: 30%;
+  max-width: 150px;
+  margin-right: 20px;
+}
+
+/* Portfolio section styles */
+#portfolio {
+  text-align: center;
+}
+
+#portfolio div {
+  margin: 20px;
+  display: inline-block;
+}
+
+#portfolio div img {
+  margin-bottom: 10px;
+}
+
+#portfolio div p {
+  font-size: 14px;
+}
+
