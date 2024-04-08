@@ -113,11 +113,12 @@ header, footer {
 
 /* About text styles */
 .about-text {
-  width: 65%; /* Adjust as needed */
+  width: 70%; /* Adjust as needed */
 }
 
 /* About image styles */
 .about-image {
-  width: 30%; /* Adjust as needed */
-  max-width: 200px; /* Limiting the maximum width */
+  width: 20%; /* Adjust as needed */
+  max-width: 100px; /* Limiting the maximum width */
+  margin-right:20px;
 }
