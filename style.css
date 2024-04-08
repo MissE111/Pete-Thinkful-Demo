@@ -82,6 +82,7 @@ div {
 
 .portfolio-item {
   width: calc(33.33% - 20px);
+  max-width: 200px;
 }
 
 .portfolio-item img {
@@ -104,3 +105,21 @@ header, footer {
   text-align: center;
 }
 
+/* Add your solution below */
+
+/* About content container styles */
+.about-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* About text styles */
+.about-text {
+  width: 65%; /* Adjust as needed */
+}
+
+/* About image styles */
+.about-image {
+  width: 30%; /* Adjust as needed */
+  max-width: 200px; /* Limiting the maximum width */
+}
