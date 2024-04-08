@@ -8,7 +8,6 @@ body {
   background-color: #eae2b7;
 }
 
-/* Set the font family for any h1, h2, or h3 heading */
 h1,
 h2,
 h3 {
@@ -29,7 +28,6 @@ p {
   line-height: 1.5;
 }
 
-/* The div container constrains the content width within the main container to 600px */
 div {
   margin: auto;
   width: 600px;
@@ -44,8 +42,6 @@ img {
 hr {
   border: 1px solid black;
 }
-
-/* Add your solution below */
 
 nav ul {
   list-style: none;
@@ -75,14 +71,18 @@ nav ul li a {
   font-size: 32px;
 }
 
-#portfolio div {
-  display: inline-block;
-  margin: 20px;
-  text-align: center;
+.portfolio-container {
+  display: flex;
+  justify-content: space-between;
 }
 
-#contact h2 {
-  text-align: center;
+.portfolio-item {
+  width: calc(33.33% - 20px); /* Adjust as needed */
+}
+
+.portfolio-item img {
+  width: 100%;
+  max-width: none;
 }
 
 header,
