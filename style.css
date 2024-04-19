@@ -1,72 +1,101 @@
 /* The @import rule below imports the Playfair Display and Source Sans Pro fonts into the stylesheet. You don't have to edit this line.*/
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
 
-/* Header styles */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+body {
+  color: #003049;
+  font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px;
+  background-color: #eae2b7;
 }
 
-/* Logo text styles */
-h1 {
-  margin: 0;
+/* Set the font family for any h1, h2, or h3 heading */
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", Times, serif;
+  text-align: center;
 }
 
-/* Navigation styles */
+article {
+  padding: 50px 0;
+}
+
+article div {
+  text-align: center;
+  width: 100%;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/* The div container constrains the content width within the main container to 600px */
+div {
+  margin: auto;
+  width: 600px;
+}
+
+img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+hr {
+  border: 1px solid black;
+}
+
+/* Add your solution below */
+
 nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
 }
 
 nav ul li {
-  margin-right: 20px;
+  display: inline;
+  margin-right: 20px; /* Adjust as needed */
 }
 
 nav ul li:last-child {
   margin-right: 0;
 }
 
-/* About section styles */
-#about {
-  text-align: center;
+nav ul li a {
+  text-decoration: none;
 }
 
-.about-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+.image-circle {
+  border-radius: 50%;
+  border: 2px solid #003049;
 }
 
-.about-text {
-  width: 50%;
-  text-align: left;
-}
-
-.about-image {
-  width: 30%;
-  max-width: 150px;
-  margin-right: 20px;
-}
-
-/* Portfolio section styles */
-#portfolio {
-  text-align: center;
+#portfolio h2 {
+  font-size: 32px;
 }
 
 #portfolio div {
-  margin: 20px;
   display: inline-block;
+  margin: 20px;
+  text-align: center;
 }
 
-#portfolio div img {
-  margin-bottom: 10px;
+#contact h2 {
+  text-align: center;
 }
 
-#portfolio div p {
-  font-size: 14px;
+header,
+footer {
+  text-align: center;
+}
+
+a {
+  color: #d62828;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f77f00;
 }
 
